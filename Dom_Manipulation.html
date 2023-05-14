@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Dom Manipulation</title>
+	<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="Dom_style.css">
+	<style type="text/css">
+		.overlay,.overlay1{
+				position: absolute;
+				top: 0%;
+				left: 0%;
+				width: 100%;
+				height: 750px;
+				backdrop-filter: blur(10px);
+				z-index: 5;
+		}
+	</style>
+</head>
+
+<body>
+	<nav>
+		<a href="Dom_Manipulation.html">Home</a>
+		<a href="DataDisplay.html">DataDisplay</a>
+		<a href="CreateElements.html">CreateElements</a>
+	</nav>
+<div class="warp">
+	<div class="heading">
+	<h1>JavaScript Dom Manipulation</h1>
+	<button id="Alert" class="btn btn-primary">Alert!</button>
+	<button id="Prompt" class="btn btn-primary">Prompt!</button>
+	<br><br>
+	<img src="https://www.wikitechy.com/technology/wp-content/uploads/2020/08/javascript-drawbacks.jpg" width="100%" height="200px">
+
+	 <!-- This total html contant adding by using javascript -->
+
+	<!--<div class="box">
+	<h2>JavaScript Course</h2>
+  <p>in this section, you will learn about DOM<br> Manipulation using JavaScript Language.</p>
+  <h2>Selection Topics</h2>
+  <ul>
+    <li>Accessing DOM Element</li>
+    <li>Modifying DOM Element</li>
+    <li>Adding New DOM Element</li>
+    <li>Removing Existing DOM Element</li>
+  </ul>
+	</div> -->
+
+	</div>
+	<div class="form">
+		<form action="DataDisplay.html">
+			<h2 id="regiText">Registration Form</h2>
+			<br>
+			<label for="fname">* First Name : </label><br>
+			<input type="text" name="firstname" placeholder="Your Name..." id="fname" class="form-control" required>
+			<br>
+			<label for="lname">* Last Name :</label><br>
+			<input type="text" name="lastname" placeholder="Your Last Name..."  class="form-control" id="lname" required>
+			<br>
+			<label for="email">* E-Mail :</label><br>
+			<input type="email" name="email" placeholder="E-Mail"  class="form-control" id="email" required>
+			<br>
+
+			<label for="country">* Country : </label>
+			<select id="country" name="country" class="form-control" required>
+				<option value="Australia">Australia</option>
+				<option value="India" selected>India</option>
+				<option value="Canada">Canada</option>
+				<option value="USA">USA</option>
+			</select>
+			<br>
+
+			<label for="gender">* Gender : </label>
+			<input type="radio" name="gender" id="male" value="Male" required>
+			<label for="male">Male</label>
+
+			<input type="radio" name="gender" id="female" value="Female">
+			<label for="female">Female</label>
+
+			<input type="radio" name="gender" id="others" value="Others">
+			<label for="others">Others</label>
+			<br><br>
+
+			<div class="form-inline">
+			<label>Hobbies <i>(Optional)</i> : </label>
+			<label><input type="checkbox" name="hobbies[]" value="Sports">Sports</label>
+			<label><input type="checkbox" name="hobbies[]" value="Movies" >Movies</label>
+			<label><input type="checkbox" name="hobbies[]" value="Music" >Music</label>
+			<br><br>
+
+			<input type="submit" name="" class="btn btn-primary form-control" value="Submit" id="btn" onclick="Values()">
+			</div>
+		</form>
+	</div>
+
+</div>
+
+<!-- creating custom alert window-->
+<div class="alert hidden">
+	<h2>This is Custom Alert!</h2>
+	<p>This is a very simple example of how a custom alert window can be created and displayed dynamically using JavaScript.</p>
+	<button id="ok" class="btn btn-danger">OK</button>
+</div>
+
+<div class="overlay hidden"></div>
+
+<!-- creating custom alert window-->
+<div class="Prompt hidden">
+	<h2>This is Custom Prompt!</h2>
+	<p>Enter The number : <input type="text" id="value1"></p>
+	<div>
+	<button id="ok1" class="btn btn-danger">OK</button>
+	<button id="Cancel" class="btn btn-danger">Cancel</button></div>
+check value in console</div>
+
+<div class="overlay1 hidden"></div>
+
+<script type="text/javascript" src="Dom.js">
+
+</script>
+</body>
+</html>

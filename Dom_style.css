@@ -1,0 +1,80 @@
+body{
+		display: flex;
+		justify-content: center;
+	}
+/*applying css for nav bar  */
+nav {
+		position: absolute;
+		border: 2px solid black;
+		border-radius: 10px;
+		padding: 10px;
+		width: 67%;
+		display: flex;
+		justify-content: space-around;
+		background-color: darkgrey;
+}
+nav a {
+	text-decoration: none;
+	color: black;
+}
+nav a:hover{
+	color: skyblue;
+}
+/*applying css for warp*/
+.warp{
+		margin-top: 50px;
+		text-align: center;
+		border: 2px solid black;
+		border-radius: 20px;
+		padding: 20px;
+		padding-bottom: 0px;
+		display: flex;
+		justify-content: space-around;
+	}
+
+.heading { background-color:skyblue;
+			padding: 20px;
+			margin-bottom: 20px;
+			border-radius: 20px;
+			height: 620px;
+			}
+.warp img{
+		border-radius: 20px;
+	}
+.box{
+		text-align: left;
+	}
+
+/*applying css for registration form	*/
+.form{
+		background-color: darkgrey;
+		border-radius: 20px;
+		padding: 20px;
+		text-align: left;
+		margin-left: 20px;
+		width: 400px;
+		height: 620px;
+	}
+.box{
+		text-align: left;
+	}
+/*applying css for alert button	*/
+.alert,.Prompt{
+		border: 5px solid skyblue;
+		border-radius: 20px;
+		text-align: center;
+		display: grid;
+		place-items: center;
+		position: absolute;
+		top: 35%;
+		transform:transition(-50%,-50%);
+		width: 600px;
+		background-color: white;
+		padding: 30px;
+		z-index: 10;
+}
+
+.alert button{ text-align: right; }
+.alert h2{ color: green }
+.alert p { color:darkred; }
+.hidden {display: none;}
